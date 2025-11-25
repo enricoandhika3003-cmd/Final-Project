@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #B64a34;
+    font-family: "Baloo Tamma 2", cursive;
+}
+
+.m-heading {
+    font-family: "Roboto Slab", serif;
+}
+
+.navigation-link {
+    border: 2px solid transparent;
+}
+
+.navigation-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #f5ba09;
+    transition: 0.5s ease;
+}
+
+#Background {
+    background-image: url("codingal.png");
+    background-repeat: no-repeat;
+    background-position: 30% 15%;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+    width: 1260px;
+    color: white;
+}
