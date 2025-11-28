@@ -4,11 +4,47 @@ html {
 
 body {
     background: #B64a34;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     font-family: "Baloo Tamma 2", cursive;
+}
+
+#jumbotron {
+    background-color: #B64a34;
+    color: white;
+    height: 25vh;
+}
+
+#about {
+    height: 0vh;
+}
+
+.text-warning {
+    margin-top: 50px;
+}
+
+#about p {
+    font-size: 16px;
+    color: #d7d7d7;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.m-heading {
+    color:rgb(225, 225, 225);
+}
+
+.about-img {
+    height: 50vh;
+    margin-bottom: 50px;
 }
 
 .m-heading {
     font-family: "Roboto Slab", serif;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .navigation-link {
