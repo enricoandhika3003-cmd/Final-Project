@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.navigation {
+    height: 70px;
+}
+
 body {
     background: #B64a34;
     margin: 0;
@@ -11,17 +15,19 @@ body {
 }
 
 #jumbotron {
-    background-color: #B64a34;
+    background-color: rgb(39, 39, 39);
     color: white;
-    height: 25vh;
+    height: 40vh;
+    margin-bottom: 0px;
 }
 
 #about {
     height: 0vh;
+    margin-top: 0px;
 }
 
 .text-warning {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 #about p {
@@ -67,4 +73,17 @@ body {
     height: 700px;
     width: 1260px;
     color: white;
+}
+
+#social-media {
+    background: rgb(100, 49, 49);
+}
+
+.media_link {
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1rem;
+    border: 2px solid rgb(251, 222, 137);
+    border-radius: 0.5rem;
+    margin-top: 15px;
 }
