@@ -94,7 +94,7 @@ body {
 
 #container {
     width: 1150px;
-    height: 730px;
+    height: 700px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(gradient.png);
     margin: 20px auto;
 }
@@ -163,8 +163,7 @@ body {
     margin: 0 20px;
     padding-top: 20px;
     font-size: 15px;
-    color: #dadada;
-    background-color: #3f3f3f;
+    background-color: #eaedef;
 }
 
 #output {
@@ -221,4 +220,133 @@ button:nth-child(20) {
 
 button:nth-child(20):active {
     background-color: #a98e17;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bankApp {
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.rows #bankApp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.rows #bankApp label {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#amount {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+#amount:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+#credit {
+    background-color: #28a745;
+    color: white;
+}
+
+#credit:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#debit {
+    background-color: #dc3545;
+    color: white;
+}
+
+#debit:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+#credit {
+    background-color: #28a745;
+    color: white;
+}
+
+#credit:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#debit {
+    background-color: #dc3545;
+    color: white;
+}
+
+#debit:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+.rows #bankApp label+label {
+    font-size: 1.1rem;
+    color: #111;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 500px) {
+    #bankApp {
+        padding: 20px 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn:last-child {
+        margin-bottom: 0;
+    }
 }
